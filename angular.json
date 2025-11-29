@@ -88,11 +88,15 @@
               }
             ],
             "styles": [
+              "node_modules/swiper/swiper-bundle.min.css",
               "src/styles.scss"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "77b0eff1-f288-4972-8785-1305a41293d4"
   }
 }

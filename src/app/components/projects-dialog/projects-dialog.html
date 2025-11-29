@@ -1,0 +1,33 @@
+<mat-card class="project-card">
+  <!-- Slick Carousel -->
+  <ngx-slick-carousel class="carousel" [config]="slideConfig">
+    @for (img of project.images; track img.path) {
+      <div ngxSlickItem class="slide">
+        <img [src]="img.path" [alt]="img.alt" class="slide-img" />
+      </div>
+    }
+  </ngx-slick-carousel>
+
+  <mat-card-header>
+    <mat-card-title>{{ project.title }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p class="desc">{{ project.description }}</p>
+
+    <div class="tech-container">
+      @for (t of project.tech; track t) {
+        <span class="tech-chip">{{ t }}</span>
+      }
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    @if (project.github) {
+      <a mat-button color="primary" href="{{ project.github }}" target="_blank" rel="noopener">Código Front-End</a>
+    }
+    @if (project.githubBackend) {
+      <a mat-button color="primary" href="{{ project.githubBackend }}" target="_blank" rel="noopener">Código Back-End</a>
+    }
+  </mat-card-actions>
+</mat-card>

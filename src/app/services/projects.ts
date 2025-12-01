@@ -25,8 +25,8 @@ export class ProjectsService {
         { path: 'images/RRNUEVANATURALEZAS/Servicio.jpg', alt: 'Servicio' }
       ],
       tech: ['C#', 'Electron', 'ASP.NET', 'Angular', 'Worker Service', 'SQL Server', 'SCRUM', 'HTML', 'CSS', 'TS'],
-      github: '',
-      githubBackend: '',
+      github: 'https://github.com/carlosandresramos/RR_Nueva_Naturaleza_Frontend_Angular',
+      githubBackend: 'https://github.com/carlosandresramos/RR_Nueva_Naturaleza_Frontend_Angular',
     },
 
     {
